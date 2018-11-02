@@ -15,6 +15,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='crudevent',
             name='event_type',
-            field=models.SmallIntegerField(choices=[(1, b'Create'), (2, b'Update'), (3, b'Delete'), (4, b'Many-to-Many Change'), (5, b'Reverse Many-to-Many Change')]),
+            field=models.SmallIntegerField(choices=[(1, u'Create'), (2, u'Update'), (3, u'Delete'), (4, u'Many-to-Many Change'), (5, u'Reverse Many-to-Many Change')]),
         ),
     ]

@@ -22,6 +22,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='loginevent',
             name='login_type',
-            field=models.SmallIntegerField(choices=[(0, b'Login'), (1, b'Logout'), (2, b'Failed login')]),
+            field=models.SmallIntegerField(choices=[(0, u'Login'), (1, u'Logout'), (2, u'Failed login')]),
         ),
     ]

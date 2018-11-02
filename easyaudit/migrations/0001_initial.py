@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
             name='CRUDEvent',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('event_type', models.SmallIntegerField(choices=[(1, b'Create'), (2, b'Update'), (3, b'Delete')])),
+                ('event_type', models.SmallIntegerField(choices=[(1, u'Create'), (2, u'Update'), (3, u'Delete')])),
                 ('object_id', models.IntegerField()),
                 ('object_repr', models.CharField(max_length=255, null=True, blank=True)),
                 ('object_json_repr', models.TextField(null=True, blank=True)),
@@ -36,7 +36,7 @@ class Migration(migrations.Migration):
             name='LoginEvent',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('login_type', models.SmallIntegerField(choices=[(0, b'Login'), (1, b'Logout'), (2, b'Login fallido')])),
+                ('login_type', models.SmallIntegerField(choices=[(0, u'Login'), (1, u'Logout'), (2, u'Login fallido')])),
                 ('username', models.CharField(max_length=255, null=True, blank=True)),
                 ('datetime', models.DateTimeField(auto_now_add=True)),
                 ('user', models.ForeignKey(on_delete=django.db.models.deletion.SET_NULL, blank=True, to=settings.AUTH_USER_MODEL, null=True)),

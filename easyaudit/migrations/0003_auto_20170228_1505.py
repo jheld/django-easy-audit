@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='crudevent',
             name='user_pk_as_string',
-            field=models.CharField(blank=True, help_text=b'String version of the user pk', max_length=255, null=True),
+            field=models.CharField(blank=True, help_text=u'String version of the user pk', max_length=255, null=True),
         ),
         migrations.AlterField(
             model_name='crudevent',
